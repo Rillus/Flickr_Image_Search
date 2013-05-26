@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html class="lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+    <title>Flickr simple search
+	</title>
+	
+	<link rel="stylesheet" href="css/styles.css" type="text/css" />
+</head>
+
+<body>
+<div id="wrapper">
+	<button id="prev" disabled>&lt; Previous page</button>
+	<input id="search" name="search" value="">
+	<button id="go">Go</button>
+	<button id="next" disabled>Next page &gt;</button>
+	<div id="results"></div>
+</div>
+<script type="text/javascript" src="flickr.js"></script>
+<script type="template" id="flickrTemplate">
+	<a href="http://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}.jpg" target="_blank"><img src="http://farm{{farm}}.staticflickr.com/{{server}}/{{id}}_{{secret}}_q.jpg" alt=""><p>{{title}}</p></a>
+</script>
+</body>
+</html>

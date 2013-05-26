@@ -1,0 +1,13 @@
+#results a {
+	float:left;
+	width:150px;
+	height:180px;
+	overflow:hidden;
+	margin:5px 10px 0;
+}
+#results p {
+	margin:0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
